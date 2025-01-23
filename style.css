@@ -1,17 +1,64 @@
 @font-face {
-  font-family: "norsebold";
-  src: url("./fonts/norse-bold-webfont.woff2") format("woff2"),
-    url("fonts/norse-bold-webfont.woff") format("woff");
+  font-family: "ungai";
+  src: url("./fonts/ungai-webfont.woff2") format("woff2"),
+    url("./fonts/ungai-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --ronin-orange: #d8bf00;
+}
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.6rem;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: "roboto", sans-serif;
+}
+
+body > div:first-child {
+  background-image: url("./images/kimono.png");
+  width: max(40%, 40rem);
+  flex: 1 0 auto;
+  background-position: -32rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "ungai";
+  font-size: 8rem;
+  color: var(--ronin-orange);
+  background-color: #18160562;
+  margin-top: 20rem;
+  text-align: center;
+  padding: 1rem 5rem;
+}
+
+.credit-line {
+  color: #e4d9d9;
+  text-align: center;
+}
+
+img {
+  width: 1.2em;
+  vertical-align: -2rem;
+  color: white;
+  display: inline-block;
+}
+
+a:link,
+a:visited {
+  color: var(--ronin-orange);
+  text-decoration: none;
 }
