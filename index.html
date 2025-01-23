@@ -11,36 +11,44 @@
   <body>
     <div>
       <div class="logo">
-        <img src="./images/gate_9519206.png" alt="The Odin Project logo" />
-        RONIN
+        <img src="./images/gate_9519206.png" alt="The Odin Project logo" />RONIN
       </div>
       <div class="credit-line">
         Design by <a href="https://github.com/NeoCorpse">Neo</a> for
         <a href="https://www.theodinproject.com/">The Odin Project</a>
       </div>
     </div>
-    <div>
+
+    <div class="content">
       <div>
-        <div>
-          <p>
-            This is not a real online service! You know you need something like
-            this in you life to help you realize your deepest dreams. <br />Sign
-            up <em>now</em> to get started
-          </p>
-          <p>You <em>know</em> you want to.</p>
-        </div>
+        <p>
+          This is not a real online service! You know you need something like
+          this in you life to help you realize your deepest dreams. <br />Sign
+          up <em>now</em> to get started
+        </p>
+        <p>You <em>know</em> you want to.</p>
       </div>
 
       <div>
-        <h3>Let's do this!</h3>
+        <h2>Let's do this!</h2>
         <form action="" method="post">
           <div>
             <label for="first-name">FIRST NAME</label
-            ><input type="text" id="first-name" name="first_name" />
+            ><input
+              type="text"
+              id="first-name"
+              name="first_name"
+              placeholder="Kim"
+            />
           </div>
           <div>
             <label for="last-name">LAST NAME</label
-            ><input type="text" id="last-name" name="last_name" />
+            ><input
+              type="text"
+              id="last-name"
+              name="last_name"
+              placeholder="Dokja"
+            />
           </div>
           <div>
             <label for="email">EMAIL</label
@@ -49,11 +57,17 @@
               pattern="^\w*(\-\w)?(\.\w*)?@\w*(-\w*)?\.\w{2,3}(\.\w{2,3})?$"
               name="email"
               id="email"
+              placeholder="omniscientReader@webtoon.org"
             />
           </div>
           <div>
             <label for="phone-number">PHONE NUMBER</label
-            ><input type="tel" name="phone_number" id="phone-number" />
+            ><input
+              type="tel"
+              name="phone_number"
+              id="phone-number"
+              placeholder="+254 722657262"
+            />
           </div>
           <div>
             <label for="password">PASSWORD</label
@@ -62,11 +76,17 @@
               minlength="8"
               name="password"
               id="password"
+              placeholder="reallyHardPassword"
             />
           </div>
           <div>
-            <label for="confirm"></label
-            ><input type="text" id="confirm" minlength="8" />
+            <label for="confirm">CONFIRM PASSWORD</label
+            ><input
+              type="text"
+              id="confirm"
+              minlength="8"
+              placeholder="reallyHardPassword"
+            />
           </div>
         </form>
       </div>
