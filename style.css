@@ -12,6 +12,7 @@
   --ronin-orange: #d8bf00;
   --box-shadow: #1816051f;
   --mini-box-shadow: 0px 0.7rem 1.5rem 0px var(--box-shadow);
+  --ronin-light: #ffcf02;
 }
 html {
   font-size: 62.5%;
@@ -66,6 +67,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--ronin-light);
+}
+
 .content {
   background-color: #fafafa;
   display: flex;
@@ -87,17 +92,20 @@ a:visited {
   box-shadow: 0px 0.7rem 1.5rem 0px var(--box-shadow);
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.5rem;
   flex: 2;
   height: 33vh;
 }
 
 .content > div {
-  padding: 2rem 4rem;
+  padding: 2rem 5rem;
 }
 
 .content > div:last-child {
   min-height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 label {
@@ -126,8 +134,20 @@ input {
   padding: 0 0.5rem;
 }
 
+input:invalid {
+  border-color: red;
+}
+
 input:valid {
   border: 1px solid green;
+}
+
+input:placeholder-shown {
+  border-color: #e5e7eb;
+}
+
+input:hover {
+  box-shadow: var(--mini-box-shadow);
 }
 
 input:focus {
@@ -136,14 +156,23 @@ input:focus {
   outline: none;
 }
 
-input:hover {
-  box-shadow: var(--mini-box-shadow);
+button {
+  padding: 1.2rem 5rem;
+  border-radius: 8px;
+  width: 23rem;
+  font-weight: 600;
+  background-color: var(--ronin-light);
+  color: #fff;
+  border: none;
+  box-shadow: 0px 0.7rem 1.5rem 3px var(--box-shadow);
 }
 
-input:invalid {
-  border-color: red;
+span {
+  color: var(--ronin-light);
+  font-weight: 600;
 }
 
-input:placeholder-shown {
-  border-color: #e5e7eb;
+h2 {
+  font-size: calc(initial * 1.2);
+  /* font-family: "ungai"; */
 }
